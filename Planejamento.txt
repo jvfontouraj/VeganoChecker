@@ -1,0 +1,87 @@
+NOME:
+-- É vegano ou não é?
+(queria usar esse nome, mas é nome do quadro do Fabio Chaves)
+
+-- É vegano?
+(nome alternativo)
+
+
+//////////////////////////////
+/// ESTRUTURA DA ARQUIVO JSON
+
+///INGREDIENTES:
+-- Id
+-- Nome
+-- Eh_Vegano
+  |- Sim (card fica verde) 
+  |- Não (card fica vermelho)
+  |- Indefinido (card fica amarelo)
+-- Porque
+  |- Origem vegetal
+  |- Derivado de x ingrediente
+-- Data_atualização
+-- Fonte
+
+***Formato padrão***
+{
+"id": 1,
+"nome": "X",
+"eh_vegano": "Sim",
+"porque": "Ingrediente de origem vegetal",
+"data_atualizacao": "20/01/2023",
+"fonte": "Link da fonte"
+},
+
+
+///PRODUTOS:
+-- Id
+-- Nome
+-- Marca
+  |- Nome da Marca
+  |- Sem marca
+-- Eh_Vegano
+  |- Sim (card fica verde) 
+  |- Não (card fica vermelho)
+  |- Indefinido (card fica amarelo)
+-- Porque
+  |- Apenas ingredientes de origem vegetal
+  |- Contém derivados de x ingrediente
+-- Ingredientes_animal
+  |- Não Contém
+  |- X
+-- Data_atualização
+-- Fonte
+
+***Formato padrão***
+{
+"id": 1,
+"nome": "X",
+"marca": "Nome da marca",
+"eh_vegano": "Sim",
+"porque": "Ingrediente de origem vegetal",
+"ingredientes_animal": "Não Contém",
+"data_atualizacao": "20/01/2023",
+"fonte": "Link da fonte"
+}
+
+
+
+//////////////////////////////
+/// ESTRUTURA DA PÁGINA
+
+Título:
+-- Label -> "É vegano?"
+
+Barra de busca:
+-- Input
+-- Placeholder -> "escreva o nome de um ingrediente ou produto..."
+-- Dropdown -> Ingrediente ou produto
+-- Button -> Botão para pesquisar
+
+Corpo:
+-- Fileira com duas colunas e no máximo 5 fileiras
+
+Rodapé:
+-- "Feito por João Vitor F Jardim"
+-- Link Github
+-- Campo para enviar email -> "Deixe sua sugestão"
