@@ -1,0 +1,34 @@
+{
+  "Ingredientes": [
+    {
+    "id": 1,
+    "nome": "X",
+    "eh_vegano": "Sim",
+    "porque": "Ingrediente de origem vegetal",
+    "data_atualizacao": "20/01/2023",
+    "fonte": "Link da fonte"
+    },
+    {
+    "id": 2,
+    "nome": "Y",
+    "eh_vegano": "Sim" 
+    }
+  ],
+  "Produtos": [
+    {
+    "id": 1,
+    "nome": "X",
+    "marca": "Nome da marca",
+    "eh_vegano": "Sim",
+    "porque": "Ingrediente de origem vegetal",
+    "ingredientes_animal": "Não Contém",
+    "data_atualizacao": "20/01/2023",
+    "fonte": "Link da fonte"
+    },
+    {
+    "id": 2,
+    "nome": "Y",
+    "eh_vegano": "Sim" 
+    }
+  ]
+}
