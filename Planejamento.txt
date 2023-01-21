@@ -25,11 +25,11 @@ NOME:
 ***Formato padrão***
 {
 "id": 1,
-"nome": "X",
-"eh_vegano": "Sim",
-"porque": "Ingrediente de origem vegetal",
-"data_atualizacao": "20/01/2023",
-"fonte": "Link da fonte"
+"name": "X",
+"itsVegan": "Vegano",
+"why": "Ingrediente de origem vegetal",
+"updateDate": "20/01/2023",
+"font": "Link da fonte"
 },
 
 
@@ -55,14 +55,14 @@ NOME:
 ***Formato padrão***
 {
 "id": 1,
-"nome": "X",
-"marca": "Nome da marca",
-"eh_vegano": "Sim",
-"porque": "Ingrediente de origem vegetal",
-"ingredientes_animal": "Não Contém",
-"data_atualizacao": "20/01/2023",
-"fonte": "Link da fonte"
-}
+"name": "X",
+"brand": "Nome da marca",
+"itsVegan": "Vegano",
+"why": "Ingrediente de origem vegetal",
+"animalIngr": "Não Contém",
+"updateDate": "20/01/2023",
+"font": "Link da fonte"
+},
 
 
 

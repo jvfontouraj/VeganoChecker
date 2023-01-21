@@ -22,20 +22,20 @@
     {
     "id": 1,
     "name": "X",
-    "marca": "Nome da marca",
+    "brand": "Nome da marca",
     "itsVegan": "Vegano",
     "why": "Ingrediente de origem vegetal",
-    "ingredientes_animal": "Não Contém",
+    "animalIngr": "Não Contém",
     "updateDate": "20/01/2023",
     "font": "Link da fonte"
     },
     {
     "id": 1,
     "name": "X",
-    "marca": "Nome da marca",
+    "brand": "Nome da marca",
     "itsVegan": "Não Vegano",
     "why": "Ingrediente de origem vegetal",
-    "ingredientes_animal": "Não Contém",
+    "animalIngr": "Não Contém",
     "updateDate": "20/01/2023",
     "font": "Link da fonte"
     }
