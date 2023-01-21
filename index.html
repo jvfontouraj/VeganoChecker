@@ -10,14 +10,31 @@
 <body> 
     <div class="search-wrapper">
         <label for="search">É vegano?</label>
-        <input type="serach" id="search" placeholder="Digite o nome de um ingrediente ou produto..." data-search>
+        <input type="serach" id="search" placeholder="Digite o nome de um ingrediente ou produto..." class="data-search">
     </div>
 
-    <div class="user-cards" data-user-cards-container></div>
-    <template data-user-template>
+    <div class="cards-container"></div>
+    <template class="card-template">
         <div class="card">
-            <div class="header" data-header></div>
-            <div class="body" data-body></div>
+            <div class="header"></div>
+            <div class="body">
+                <div class="why-div">
+                    <h3>Porque?</h3>
+                    <div class="why" ></div>
+                </div>
+                <div class="update-div">
+                    <h3>Última atualização</h3>
+                    <div class="update-date" ></div>
+                </div>
+                <div class="font-div">
+                    <h3>Fonte</h3>
+                    <div class="font"></div>
+                </div>
+                <div class="its-vegan-div">
+                    <div class="vegan-sign"></div>
+                    <div class="its-vegan"></div>
+                </div>
+            </div>
         </div>
     </template>
 
