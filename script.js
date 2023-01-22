@@ -22,9 +22,17 @@ searchInput.addEventListener("input", (el)=>{
       user.itsVegan.toLowerCase().includes(value)
       user.element.classList.toggle("hide", !isVisible)
     })
-  } 
-
-  
+  } else{
+produtos.forEach(user => {
+      const isVisible = user.name.toLowerCase().includes(value) ||
+      user.why.toLowerCase().includes(value) ||
+user.brand.toLowerCase().includes(value) ||
+user.animalIngrd.toLowerCase().includes(value) ||
+      user.updateDate.toLowerCase().includes(value) ||
+      user.font.toLowerCase().includes(value) ||
+      user.itsVegan.toLowerCase().includes(value)
+      user.element.classList.toggle("hide", !isVisible)
+ } 
 })
 
 fetch("../data.json").then(res => res.json()).then(data => {
