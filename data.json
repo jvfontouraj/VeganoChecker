@@ -2,18 +2,34 @@
   "Ingredientes": [
     {
     "id": 1,
-    "name": "X",
+    "name": "Amido de Milho",
     "itsVegan": "Vegano",
     "why": "Ingrediente de origem vegetal",
-    "updateDate": "20/01/2023",
+    "updateDate": "22/01/2023",
     "font": "Link da fonte"
     },
     {
     "id": 2,
-    "name": "Y",
+    "name": "Vitamina D3",
     "itsVegan": "Não Vegano",
-    "why": "Ingrediente retirado da vaca",
-    "updateDate": "20/01/2023",
+    "why": "Ingrediente retirado da Lã de Ovelhas",
+    "updateDate": "22/01/2023",
+    "font": "Link da fonte"
+    },
+    {
+    "id": 3,
+    "name": "Vitamina D2",
+    "itsVegan": "Vegano",
+    "why": "Ingrediente de origem vegetal",
+    "updateDate": "22/01/2023",
+    "font": "Link da fonte"
+    },    
+{
+    "id": 4,
+    "name": "Vitamina B12",
+    "itsVegan": "Indefinido",
+    "why": "Pode conter gelatina",
+    "updateDate": "22/01/2023",
     "font": "Link da fonte"
     }
 
