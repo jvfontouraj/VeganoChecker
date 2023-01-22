@@ -1,19 +1,30 @@
 const cardTemplate = document.querySelector(".card-template")
 const cardContainer = document.querySelector(".cards-container")
 const searchInput = document.querySelector(".data-search")
+let selectType = document.querySelector(".select-type")
+let optionValue = "Ingredientes"
+
+selectType.addEventListener('change', function() {
+  let selectedOption = this.options[this.selectedIndex];
+  optionValue = selectedOption.value;
+});
 
 let ingredients = []
 
 searchInput.addEventListener("input", (el)=>{
-  const value = el.target.value.toLowerCase()
-  ingredients.forEach(user => {
-    const isVisible = user.name.toLowerCase().includes(value) ||
-    user.why.toLowerCase().includes(value) ||
-    user.updateDate.toLowerCase().includes(value) ||
-    user.font.toLowerCase().includes(value) ||
-    user.itsVegan.toLowerCase().includes(value)
-    user.element.classList.toggle("hide", !isVisible)
-  })
+  const value = el.target.value.toLowerCase();
+  if(optionValue === "Ingredientes"){
+    ingredients.forEach(user => {
+      const isVisible = user.name.toLowerCase().includes(value) ||
+      user.why.toLowerCase().includes(value) ||
+      user.updateDate.toLowerCase().includes(value) ||
+      user.font.toLowerCase().includes(value) ||
+      user.itsVegan.toLowerCase().includes(value)
+      user.element.classList.toggle("hide", !isVisible)
+    })
+  } 
+
+  
 })
 
 fetch("../data.json").then(res => res.json()).then(data => {

@@ -10,6 +10,10 @@ Spacing system (px)
   box-sizing: border-box;
 }
 
+*:focus{
+  outline: none;
+ }
+
 html {
   /* font-size: 10px; */
 
@@ -65,10 +69,31 @@ label{
   font-size: 5.2rem;
 }
 
-input{
-  font-size: 1.6rem;
-  width: 80%;
+.input-div{
+  display: flex;
 }
+
+input{
+  font-size: 2rem;
+  width: 25rem;
+  height: 3rem;
+
+  border-radius: .25rem 0 0 .25rem ;
+  border: 1px solid #555;
+}
+
+select{
+  font-size: 1.6rem;
+  width: auto;
+	height: auto;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 0 .25rem .25rem 0;
+  border: 1px solid #555;
+  padding: 0 5px;
+  border-left-style:none
+}
+
 
 /*************/
 /* VEG CARDS */

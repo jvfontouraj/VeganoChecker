@@ -10,7 +10,13 @@
 <body> 
     <div class="search-wrapper">
         <label for="search">É vegano?</label>
-        <input type="serach" id="search" placeholder="Digite o nome de um ingrediente ou produto..." class="data-search">
+        <div class="input-div">
+            <input type="serach" id="search" placeholder="Digite aqui para descobrir..." class="data-search">
+            <select class="select-type">
+                <option value="Ingredientes">Ingredientes</option>
+                <option value="Produtos">Produtos</option>
+            </select>
+        </div>
     </div>
 
     <div class="cards-container"></div>
