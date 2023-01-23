@@ -3,6 +3,8 @@ const prodTemplate = document.querySelector(".products-template")
 const ingrCardContainer = document.querySelector(".ingr-cards-container")
 const prodCardContainer = document.querySelector(".prod-cards-container")
 const searchInput = document.querySelector(".data-search")
+const ingrMessage = document.querySelector(".ingr-message")
+const prodMessage = document.querySelector(".prod-message")
 let selectType = document.querySelector(".select-type")
 let optionValue = "Ingredientes"
 prodCardContainer.classList.add("hide")
@@ -25,6 +27,8 @@ selectType.addEventListener('change', function() {
 
 let ingredients = []
 let produtos = []
+let ingrResults = 0
+let prodResults = []
 
 searchInput.addEventListener("input", (el)=>{
   const value = el.target.value.toLowerCase();
@@ -38,6 +42,7 @@ searchInput.addEventListener("input", (el)=>{
       user.objType.toLowerCase().includes(value)
       user.element.classList.toggle("hide", !isVisible || (value === "vegano" && !user.veganCheck))
     })
+
   } else{
     produtos.forEach(user => {
       const isVisible = user.name.toLowerCase().includes(value) ||
@@ -49,6 +54,8 @@ searchInput.addEventListener("input", (el)=>{
       user.itsVegan.toLowerCase().includes(value) ||
       user.objType.toLowerCase().includes(value)
       user.element.classList.toggle("hide", !isVisible || (value === "vegano" && !user.veganCheck))
+      if(ingredients.length = 0)
+      prodMessage.classList.toggle("hide")
     })
   }
 })

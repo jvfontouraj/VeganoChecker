@@ -33,7 +33,7 @@
     "fontLink": "youtu.be/0qBRYYAd-kI",
     "objType": "ingrediente"
     },    
-{
+    {
     "id": 4,
     "name": "Vitamina B12",
     "itsVegan": "Indefinido",
@@ -42,6 +42,17 @@
     "updateDate": "22/01/2023",
     "font": "Canal Fábio Chaves",
     "fontLink": "youtu.be/0qBRYYAd-kI",
+    "objType": "ingrediente"
+    },
+    {
+    "id": 5,
+    "name": "Carmin de Cochonilha",
+    "itsVegan": "Não Vegano",
+    "veganCheck": 0,
+    "why": "Feito a partir do inseto Cochonilha",
+    "updateDate": "22/01/2023",
+    "font": "Site 'Muito Gourmet'",
+    "fontLink": "https://muitogourmet.com/carmim-de-cochonilha-conheca-o-corante-feito-de-inseto/",
     "objType": "ingrediente"
     }
 
@@ -61,16 +72,55 @@
     "objType": "produto"
     },
     {
-    "id": 1,
-    "name": "Y",
-    "brand": "Nome da marca",
+    "id": 2,
+    "name": "Pimenta Tabasco Original",
+    "brand": "Tabasco",
     "itsVegan": "Vegano",
     "veganCheck": 1,
-    "why": "Ingrediente de origem animal",
+    "why": "Produto de origem vegetal",
     "animalIngr": "Não Contém",
-    "updateDate": "20/01/2023",
+    "updateDate": "18/01/2023",
     "font": "Canal Fábio Chaves",
-    "fontLink": "youtu.be/0qBRYYAd-kI",
+    "fontLink": "https://youtu.be/unZ3J1SrC30",
+    "objType": "produto"
+    },
+    {
+    "id": 3,
+    "name": "Paçoquita Original",
+    "brand": "Santa Helena",
+    "itsVegan": "Vegano",
+    "veganCheck": 1,
+    "why": "Produto de origem vegetal",
+    "animalIngr": "Não Contém",
+    "updateDate": "18/01/2023",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "https://youtu.be/unZ3J1SrC30",
+    "objType": "produto"
+    },
+    {
+    "id": 3,
+    "name": "Paçoquita Esporte",
+    "brand": "Santa Helena",
+    "itsVegan": "Não Vegano",
+    "veganCheck": 0,
+    "why": "Feito com Whey Protein",
+    "animalIngr": "Leite",
+    "updateDate": "18/01/2023",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "https://youtu.be/unZ3J1SrC30",
+    "objType": "produto"
+    },
+    {
+    "id": 4,
+    "name": "Wafer Morango",
+    "brand": "Piraquê",
+    "itsVegan": "Não Vegano",
+    "veganCheck": 0,
+    "why": "Contém corante natural Carmin de Cochonilha",
+    "animalIngr": "Carmim de Cochonilha",
+    "updateDate": "18/01/2023",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "https://youtu.be/unZ3J1SrC30",
     "objType": "produto"
     }
 
