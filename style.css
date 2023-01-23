@@ -21,6 +21,8 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+  height: auto;
+  background-color: #79e17b;
 }
 
 body {
@@ -73,6 +75,7 @@ body {
 
 label{
   font-size: 5.2rem;
+  margin-bottom: 2.4rem;
 }
 
 .input-div{

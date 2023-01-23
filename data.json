@@ -98,7 +98,7 @@
     "objType": "produto"
     },
     {
-    "id": 3,
+    "id": 4,
     "name": "Paçoquita Esporte",
     "brand": "Santa Helena",
     "itsVegan": "Não Vegano",
@@ -111,18 +111,43 @@
     "objType": "produto"
     },
     {
-    "id": 4,
+    "id": 5,
     "name": "Wafer Morango",
     "brand": "Piraquê",
     "itsVegan": "Não Vegano",
     "veganCheck": 0,
     "why": "Contém corante natural Carmin de Cochonilha",
     "animalIngr": "Carmim de Cochonilha",
-    "updateDate": "18/01/2023",
+    "updateDate": "03/08/2022",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "https://youtu.be/unZ3J1SrC30",
+    "objType": "produto"
+    },
+    {
+    "id": 6,
+    "name": "Wafer Chocolate",
+    "brand": "Piraquê",
+    "itsVegan": "Vegano",
+    "veganCheck": 1,
+    "why": "Produto de origem vegetal",
+    "animalIngr": "Não Contém",
+    "updateDate": "03/08/2022",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "https://youtu.be/unZ3J1SrC30",
+    "objType": "produto"
+    },
+    {
+    "id": 7,
+    "name": "Salgadinho Camarão com Pimenta",
+    "brand": "Torcida",
+    "itsVegan": "Vegano",
+    "veganCheck": 1,
+    "why": "Produto de origem vegetal",
+    "animalIngr": "Não Contém",
+    "updateDate": "03/08/2022",
     "font": "Canal Fábio Chaves",
     "fontLink": "https://youtu.be/unZ3J1SrC30",
     "objType": "produto"
     }
-
   ]
 }
