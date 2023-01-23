@@ -76,6 +76,7 @@ body {
 label{
   font-size: 5.2rem;
   margin-bottom: 2.4rem;
+  color: whitesmoke;
 }
 
 .input-div{
@@ -120,6 +121,9 @@ select{
   border: 1px solid #555;
   background-color: white;
   padding: 1rem;
+  border-radius: 5%;
+  /* border: 1px solid #9be15d ; */
+  border: none;
 }
 
 .card > .header {
@@ -132,6 +136,21 @@ select{
   font-size: 1.4rem;
 }
 
+.vegano{
+  background-color: #9be15d;
+}
+
+.naoVegano{
+  background-color: red;
+}
+
+.indefinido{
+  background-color: yellow;
+}
+
+.body-child{
+ margin-bottom: .75rem;
+}
 
 /*****************/
 /* SUGESTION BAR */
