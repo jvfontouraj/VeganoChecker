@@ -48,6 +48,12 @@ body {
   display: none;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-self: center;
+  justify-self: center;
+}
 
 /**************/
 /* SEARCH BAR */
@@ -99,12 +105,7 @@ select{
 /* VEG CARDS */
 /*************/
 
-.cards-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-self: center;
-  justify-self: center;
-
+.ingr-cards-container, .prod-cards-container{
   width: 50%;
   column-gap: 4.8rem;
   row-gap: 2.4rem;

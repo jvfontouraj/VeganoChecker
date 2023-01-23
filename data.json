@@ -52,10 +52,10 @@
     },
     {
     "id": 1,
-    "name": "X",
+    "name": "Y",
     "brand": "Nome da marca",
     "itsVegan": "Não Vegano",
-    "why": "Ingrediente de origem vegetal",
+    "why": "Ingrediente de origem animal",
     "animalIngr": "Não Contém",
     "updateDate": "20/01/2023",
     "font": "Link da fonte",

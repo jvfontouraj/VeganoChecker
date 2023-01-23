@@ -1,12 +1,28 @@
-const cardTemplate = document.querySelector(".card-template")
-const cardContainer = document.querySelector(".cards-container")
+const ingrTemplate = document.querySelector(".ingredients-template")
+const prodTemplate = document.querySelector(".products-template")
+const ingrCardContainer = document.querySelector(".ingr-cards-container")
+const prodCardContainer = document.querySelector(".prod-cards-container")
 const searchInput = document.querySelector(".data-search")
 let selectType = document.querySelector(".select-type")
 let optionValue = "Ingredientes"
 
+prodCardContainer.classList.add("hide")
+
 selectType.addEventListener('change', function() {
   let selectedOption = this.options[this.selectedIndex];
   optionValue = selectedOption.value;
+  if(optionValue === "Ingredientes"){
+    ingrCardContainer.classList.remove("hide")
+    ingrCardContainer.classList.add("grid")
+    prodCardContainer.classList.remove("grid")
+    prodCardContainer.classList.add("hide")
+  }else{
+    ingrCardContainer.classList.add("hide")
+    ingrCardContainer.classList.remove("grid")
+    prodCardContainer.classList.add("grid")
+    prodCardContainer.classList.remove("hide")
+  }
+
 });
 
 let ingredients = []
@@ -41,7 +57,7 @@ searchInput.addEventListener("input", (el)=>{
 
 fetch("../data.json").then(res => res.json()).then(data => {
     ingredients = data.Ingredientes.map(user => {
-    const card = cardTemplate.content.cloneNode(true).children[0]
+    const card = ingrTemplate.content.cloneNode(true).children[0]
     const header = card.querySelector(".header")
     const why = card.querySelector(".why")
     const updateDate = card.querySelector(".update-date")
@@ -54,28 +70,31 @@ fetch("../data.json").then(res => res.json()).then(data => {
     font.textContent = user.font
     itsVegan.textContent = user.itsVegan
 
-    cardContainer.append(card)
+    ingrCardContainer.append(card)
 
     return {objType: user.objType, name: user.name, why: user.why, updateDate: user.updateDate, font: user.font, itsVegan: user.itsVegan, element: card}
     });
 
     produtos = data.Produtos.map(user => {
-    const card = cardTemplate.content.cloneNode(true).children[0]
+    const card = prodTemplate.content.cloneNode(true).children[0]
     const header = card.querySelector(".header")
+    const brand = card.querySelector(".brand")
     const why = card.querySelector(".why")
+    const animalIngr = card.querySelector(".animal-ingr")
     const updateDate = card.querySelector(".update-date")
     const font = card.querySelector(".font")
     const itsVegan =card.querySelector(".its-vegan")
 
     header.textContent = user.name
+    brand.textContent = user.brand
     why.textContent = user.why
+    animalIngr.textContent = user.animalIngr
     updateDate.textContent = user.updateDate
     font.textContent = user.font
     itsVegan.textContent = user.itsVegan
 
-    cardContainer.append(card)
+    prodCardContainer.append(card)
 
     return {objType: user.objType, name: user.name, why: user.why, updateDate: user.updateDate, font: user.font, itsVegan: user.itsVegan, element: card}
     });
-  
 })
