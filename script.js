@@ -5,7 +5,6 @@ const prodCardContainer = document.querySelector(".prod-cards-container")
 const searchInput = document.querySelector(".data-search")
 let selectType = document.querySelector(".select-type")
 let optionValue = "Ingredientes"
-
 prodCardContainer.classList.add("hide")
 
 selectType.addEventListener('change', function() {
@@ -22,7 +21,6 @@ selectType.addEventListener('change', function() {
     prodCardContainer.classList.add("grid")
     prodCardContainer.classList.remove("hide")
   }
-
 });
 
 let ingredients = []
@@ -38,19 +36,19 @@ searchInput.addEventListener("input", (el)=>{
       user.font.toLowerCase().includes(value) ||
       user.itsVegan.toLowerCase().includes(value)||
       user.objType.toLowerCase().includes(value)
-      user.element.classList.toggle("hide", !isVisible)
+      user.element.classList.toggle("hide", !isVisible || (value === "vegano" && !user.veganCheck))
     })
   } else{
     produtos.forEach(user => {
       const isVisible = user.name.toLowerCase().includes(value) ||
       user.why.toLowerCase().includes(value) ||
       user.brand.toLowerCase().includes(value) ||
-      user.animalIngrd.toLowerCase().includes(value) ||
+      user.animalIngr.toLowerCase().includes(value) ||
       user.updateDate.toLowerCase().includes(value) ||
       user.font.toLowerCase().includes(value) ||
       user.itsVegan.toLowerCase().includes(value) ||
       user.objType.toLowerCase().includes(value)
-      user.element.classList.toggle("hide", !isVisible)
+      user.element.classList.toggle("hide", !isVisible || (value === "vegano" && !user.veganCheck))
     })
   }
 })
@@ -70,9 +68,10 @@ fetch("../data.json").then(res => res.json()).then(data => {
     font.textContent = user.font
     itsVegan.textContent = user.itsVegan
 
+    font.setAttribute('href', user.fontLink)
     ingrCardContainer.append(card)
 
-    return {objType: user.objType, name: user.name, why: user.why, updateDate: user.updateDate, font: user.font, itsVegan: user.itsVegan, element: card}
+    return {objType: user.objType, name: user.name, why: user.why, updateDate: user.updateDate, font: user.font, itsVegan: user.itsVegan, veganCheck: user.veganCheck, element: card}
     });
 
     produtos = data.Produtos.map(user => {
@@ -93,8 +92,9 @@ fetch("../data.json").then(res => res.json()).then(data => {
     font.textContent = user.font
     itsVegan.textContent = user.itsVegan
 
+    font.setAttribute('href', user.fontLink)
     prodCardContainer.append(card)
 
-    return {objType: user.objType, name: user.name, why: user.why, updateDate: user.updateDate, font: user.font, itsVegan: user.itsVegan, element: card}
+    return {objType: user.objType, name: user.name, brand: user.brand, why: user.why, animalIngr: user.animalIngr, updateDate: user.updateDate, font: user.font, itsVegan: user.itsVegan, veganCheck: user.veganCheck, element: card}
     });
 })

@@ -4,36 +4,44 @@
     "id": 1,
     "name": "Amido de Milho",
     "itsVegan": "Vegano",
+    "veganCheck": 1,
     "why": "Ingrediente de origem vegetal",
     "updateDate": "22/01/2023",
-    "font": "Link da fonte",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "youtu.be/0qBRYYAd-kI",
     "objType": "ingrediente"
     },
     {
     "id": 2,
     "name": "Vitamina D3",
     "itsVegan": "Não Vegano",
+    "veganCheck": 0,
     "why": "Ingrediente retirado da Lã de Ovelhas",
     "updateDate": "22/01/2023",
-    "font": "Link da fonte",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "youtu.be/0qBRYYAd-kI",
     "objType": "ingrediente"
     },
     {
     "id": 3,
     "name": "Vitamina D2",
     "itsVegan": "Vegano",
+    "veganCheck": 1,
     "why": "Ingrediente de origem vegetal",
     "updateDate": "22/01/2023",
-    "font": "Link da fonte",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "youtu.be/0qBRYYAd-kI",
     "objType": "ingrediente"
     },    
 {
     "id": 4,
     "name": "Vitamina B12",
     "itsVegan": "Indefinido",
+    "veganCheck": 0,
     "why": "Pode conter gelatina",
     "updateDate": "22/01/2023",
-    "font": "Link da fonte",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "youtu.be/0qBRYYAd-kI",
     "objType": "ingrediente"
     }
 
@@ -41,24 +49,28 @@
   "Produtos": [
     {
     "id": 1,
-    "name": "X",
-    "brand": "Nome da marca",
-    "itsVegan": "Vegano",
-    "why": "Ingrediente de origem vegetal",
-    "animalIngr": "Não Contém",
-    "updateDate": "20/01/2023",
-    "font": "Link da fonte",
+    "name": "Margarina Claybom",
+    "brand": "Perdigão",
+    "itsVegan": "Não Vegano",
+    "veganCheck": 0,
+    "why": "Possui emuslsificante de origem animal",
+    "animalIngr": "Emulsificante",
+    "updateDate": "17/01/2023",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "https://youtu.be/0qBRYYAd-kI",
     "objType": "produto"
     },
     {
     "id": 1,
     "name": "Y",
     "brand": "Nome da marca",
-    "itsVegan": "Não Vegano",
+    "itsVegan": "Vegano",
+    "veganCheck": 1,
     "why": "Ingrediente de origem animal",
     "animalIngr": "Não Contém",
     "updateDate": "20/01/2023",
-    "font": "Link da fonte",
+    "font": "Canal Fábio Chaves",
+    "fontLink": "youtu.be/0qBRYYAd-kI",
     "objType": "produto"
     }
 
