@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400,500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Vegano Checker</title>
 </head>
@@ -22,8 +25,56 @@
     <div class="ingr-cards-container grid"></div>
     <div class="prod-cards-container"></div>
 
-    <template class="ingredients-template">
-        <div class="card">
+    <template class="veg-ingredients-template">
+        <div class="card veg-div">
+            <div class="header"></div>
+            <div class="body">
+                <div class="why-div body-child">
+                    <h3>Porque?</h3>
+                    <div class="why" ></div>
+                </div>
+                <div class="update-div body-child">
+                    <h3>Última atualização</h3>
+                    <div class="update-date" ></div>
+                </div>
+                <div class="font-div body-child">
+                    <h3>Fonte</h3>
+                    <div><a href="#" class="font" target="_blank"></a></div>
+                </div>
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign"></div>
+                    <div class="its-vegan"></div>
+                </div>
+            </div>
+        </div>
+        <h3 class="ingr-message hidde">Nenhum ingrediente foi encontrado</h3>
+    </template>
+    <template class="nveg-ingredients-template">
+        <div class="card nveg-div">
+            <div class="header"></div>
+            <div class="body">
+                <div class="why-div body-child">
+                    <h3>Porque?</h3>
+                    <div class="why" ></div>
+                </div>
+                <div class="update-div body-child">
+                    <h3>Última atualização</h3>
+                    <div class="update-date" ></div>
+                </div>
+                <div class="font-div body-child">
+                    <h3>Fonte</h3>
+                    <div><a href="#" class="font" target="_blank"></a></div>
+                </div>
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign"></div>
+                    <div class="its-vegan"></div>
+                </div>
+            </div>
+        </div>
+        <h3 class="ingr-message hidde">Nenhum ingrediente foi encontrado</h3>
+    </template>
+    <template class="undf-ingredients-template">
+        <div class="card undf-div">
             <div class="header"></div>
             <div class="body">
                 <div class="why-div body-child">
@@ -47,8 +98,72 @@
         <h3 class="ingr-message hidde">Nenhum ingrediente foi encontrado</h3>
     </template>
 
-    <template class="products-template">
-        <div class="card">
+    <template class="veg-products-template">
+        <div class="card veg-div">
+            <div class="header"></div>
+            <div class="body">
+                <div class="brand-div body-child">
+                    <h3>Marca</h3>
+                    <div class="brand"></div>
+                </div>
+                <div class="why-div body-child">
+                    <h3>Porque?</h3>
+                    <div class="why" ></div>
+                </div>
+                <div class="animal-ingr-div body-child">
+                    <h3>Ingrediente de Origem Animal</h3>
+                    <div class="animal-ingr"></div>
+                </div>
+                <div class="update-div body-child">
+                    <h3>Última atualização</h3>
+                    <div class="update-date" ></div>
+                </div>
+                <div class="font-div body-child">
+                    <h3>Fonte</h3>
+                    <div><a href="#" class="font" target="_blank"></a></div>
+                </div>
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign"></div>
+                    <div class="its-vegan"></div>
+                </div>
+            </div>
+        </div>
+        <h3 class="prod-message hidde">Nenhum produto foi encontrado</h3>
+    </template>
+    <template class="nveg-products-template">
+        <div class="card nveg-div">
+            <div class="header"></div>
+            <div class="body">
+                <div class="brand-div body-child">
+                    <h3>Marca</h3>
+                    <div class="brand"></div>
+                </div>
+                <div class="why-div body-child">
+                    <h3>Porque?</h3>
+                    <div class="why" ></div>
+                </div>
+                <div class="animal-ingr-div body-child">
+                    <h3>Ingrediente de Origem Animal</h3>
+                    <div class="animal-ingr"></div>
+                </div>
+                <div class="update-div body-child">
+                    <h3>Última atualização</h3>
+                    <div class="update-date" ></div>
+                </div>
+                <div class="font-div body-child">
+                    <h3>Fonte</h3>
+                    <div><a href="#" class="font" target="_blank"></a></div>
+                </div>
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign"></div>
+                    <div class="its-vegan"></div>
+                </div>
+            </div>
+        </div>
+        <h3 class="prod-message hidde">Nenhum produto foi encontrado</h3>
+    </template>
+    <template class="undf-products-template">
+        <div class="card undf-div">
             <div class="header"></div>
             <div class="body">
                 <div class="brand-div body-child">

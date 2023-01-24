@@ -75,6 +75,7 @@ body {
 
 label{
   font-size: 5.2rem;
+  font-weight: 600;
   margin-bottom: 2.4rem;
   color: whitesmoke;
 }
@@ -90,6 +91,10 @@ input{
 
   border-radius: .25rem 0 0 .25rem ;
   border: 1px solid #555;
+}
+
+input::-moz-placeholder{
+  font-family: "Rubik", sans-serif;
 }
 
 select{
@@ -136,16 +141,20 @@ select{
   font-size: 1.4rem;
 }
 
-.vegano{
-  background-color: #9be15d;
+.veg-div{
+  background-color: rgb(95, 150, 68);
+  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
 }
 
-.naoVegano{
-  background-color: red;
+.nveg-div{
+  background-color: rgb(238, 75, 75);
+  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
+
 }
 
-.indefinido{
-  background-color: yellow;
+.undf-div{
+  background-color: rgb(230, 230, 98);
+  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
 }
 
 .body-child{
