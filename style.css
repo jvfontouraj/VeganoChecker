@@ -78,6 +78,11 @@ label{
   font-weight: 600;
   margin-bottom: 2.4rem;
   color: whitesmoke;
+
+  /* background-image: linear-gradient(to right, #68973f, #037459);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; */
 }
 
 .input-div{
@@ -142,18 +147,18 @@ select{
 }
 
 .veg-div{
-  background-color: rgb(95, 150, 68);
+  background-image: linear-gradient(to right, #9be15d, #00e3ae);
   box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
 }
 
 .nveg-div{
-  background-color: rgb(238, 75, 75);
+  background-image: linear-gradient(to right, #fa6363, #e38100);
   box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
 
 }
 
 .undf-div{
-  background-color: rgb(230, 230, 98);
+  background-image: linear-gradient(to right, #e6e662, #e38800);
   box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
 }
 
