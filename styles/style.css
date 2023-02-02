@@ -21,7 +21,6 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
-  height: auto;
   background-color: #79e17b;
 }
 
@@ -36,10 +35,10 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   max-width: 120rem;
   margin: auto;
+  min-height: 100vh
 }
 
 /******************************/
@@ -114,6 +113,14 @@ select{
   border-left-style:none
 }
 
+a{
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+  text-transform: capitalize;
+}
 
 /*************/
 /* VEG CARDS */
@@ -128,22 +135,24 @@ select{
 }
 
 .card{
-  border: 1px solid #555;
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 5%;
-  /* border: 1px solid #9be15d ; */
   border: none;
+  max-width: 26rem;
 }
 
 .card > .header {
   margin-bottom: 1rem;
   font-size: 2rem;
-
 }
 
 .card > .body {
   font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .veg-div{
@@ -163,7 +172,15 @@ select{
 }
 
 .body-child{
- margin-bottom: .75rem;
+  margin-bottom: 1rem;
+}
+
+.body-child :last-child{
+  padding-top: .5rem;
+}
+
+.its-vegan-div{
+  margin-bottom: 0;
 }
 
 /*****************/
