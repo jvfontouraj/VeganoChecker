@@ -41,6 +41,15 @@ body {
   min-height: 100vh
 }
 
+a{
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 /******************************/
 /* GENRAL REUSABLE COMPONENTS */
 /******************************/
@@ -76,16 +85,12 @@ label{
   font-size: 5.2rem;
   font-weight: 600;
   margin-bottom: 2.4rem;
-  color: whitesmoke;
-
-  /* background-image: linear-gradient(to right, #68973f, #037459);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent; */
-}
+  color: white;}
 
 .input-div{
   display: flex;
+  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.295)
+
 }
 
 input{
@@ -94,7 +99,7 @@ input{
   height: 3rem;
 
   border-radius: .25rem 0 0 .25rem ;
-  border: 1px solid #555;
+  border: 1px solid #333;
 }
 
 input::-moz-placeholder{
@@ -107,20 +112,14 @@ select{
 	height: auto;
 	cursor: pointer;
 	background-color: white;
+  color: #555;
 	border-radius: 0 .25rem .25rem 0;
-  border: 1px solid #555;
+  border: 1px solid #333;
   padding: 0 5px;
   border-left-style:none
 }
 
-a{
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  color: #555;
-  font-weight: 500;
-  text-transform: capitalize;
-}
+
 
 /*************/
 /* VEG CARDS */
