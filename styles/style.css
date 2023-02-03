@@ -38,7 +38,8 @@ body {
   align-items: center;
   max-width: 120rem;
   margin: auto;
-  min-height: 100vh
+  min-height: 100vh;
+  padding-bottom: 10rem;
 }
 
 a{
@@ -141,6 +142,13 @@ select{
   border-radius: 5%;
   border: none;
   max-width: 26rem;
+  transition: all 0.4s;
+  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.171)
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.082)
 }
 
 .card > .header {
@@ -156,18 +164,15 @@ select{
 
 .veg-div{
   background-image: linear-gradient(to right, #9be15d, #00e3ae);
-  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
 }
 
 .nveg-div{
   background-image: linear-gradient(to right, #fa6363, #e38100);
-  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
 
 }
 
 .undf-div{
   background-image: linear-gradient(to right, #e6e662, #e38800);
-  box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.308)
 }
 
 .body-child{
@@ -178,7 +183,7 @@ select{
   padding-top: .5rem;
 }
 
-.its-vegan-div{
+.font-div{
   margin-bottom: 0;
 }
 
