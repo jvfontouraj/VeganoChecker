@@ -86,12 +86,12 @@ label{
   font-size: 5.2rem;
   font-weight: 600;
   margin-bottom: 2.4rem;
-  color: white;}
+  color: white;
+}
 
 .input-div{
   display: flex;
   box-shadow:0 2.4rem 4.8rem rgba(0, 0, 0, 0.295)
-
 }
 
 input{
@@ -135,8 +135,6 @@ select{
 }
 
 .card{
-  display: flex;
-  flex-direction: column;
   background-color: white;
   padding: 2rem;
   border-radius: 5%;

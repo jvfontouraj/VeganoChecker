@@ -39,15 +39,12 @@ searchInput.addEventListener("input", (el)=>{
   if(optionValue === "Ingredientes"){
     ingredients.forEach(user => {
       const isVisible = user.name.toLowerCase().includes(value) ||
-      user.why.toLowerCase().includes(value) ||
-      user.updateDate.toLowerCase().includes(value) ||
-      user.font.toLowerCase().includes(value) ||
-      user.itsVegan.toLowerCase().includes(value)||
-      user.objType.toLowerCase().includes(value)
-      console.log(isVisible)
-      if(!isVisible){
-        user.element.classList.toggle("hide")
-      }
+        user.why.toLowerCase().includes(value) ||
+        user.updateDate.toLowerCase().includes(value) ||
+        user.font.toLowerCase().includes(value) ||
+        user.itsVegan.toLowerCase().includes(value)||
+        user.objType.toLowerCase().includes(value)
+      user.element.classList.toggle("hide", !isVisible || (value === "vegano" && !user.veganCheck))
     })
 
   } else{
@@ -67,30 +64,30 @@ searchInput.addEventListener("input", (el)=>{
 
 fetch("../data.json").then(res => res.json()).then(data => {
   ingredients = data.Ingredientes.map(user => {
-  let card
-  if(user.itsVegan === "Vegano"){
-    card = vegIngrTemplate.content.cloneNode(true).children[0]
-  }else if(user.itsVegan === "Não Vegano"){
-    card = nvegIngrTemplate.content.cloneNode(true).children[0]
-  }else{
-    card = undfIngrTemplate.content.cloneNode(true).children[0]
-  }
-  const header = card.querySelector(".header")
-  const itsVegan =card.querySelector(".its-vegan")
-  const why = card.querySelector(".why")
-  const updateDate = card.querySelector(".update-date")
-  const font = card.querySelector(".font")
+    let card
+    if(user.itsVegan === "Vegano"){
+      card = vegIngrTemplate.content.cloneNode(true).children[0]
+    }else if(user.itsVegan === "Não Vegano"){
+      card = nvegIngrTemplate.content.cloneNode(true).children[0]
+    }else{
+      card = undfIngrTemplate.content.cloneNode(true).children[0]
+    }
+    const header = card.querySelector(".header")
+    const itsVegan =card.querySelector(".its-vegan")
+    const why = card.querySelector(".why")
+    const updateDate = card.querySelector(".update-date")
+    const font = card.querySelector(".font")
 
-  header.textContent = user.name
-  itsVegan.textContent = user.itsVegan
-  why.textContent = user.why
-  updateDate.textContent = user.updateDate
-  font.textContent = user.font
+    header.textContent = user.name
+    itsVegan.textContent = user.itsVegan
+    why.textContent = user.why
+    updateDate.textContent = user.updateDate
+    font.textContent = user.font
 
-  font.setAttribute('href', user.fontLink)
-  ingrCardContainer.append(card)
+    font.setAttribute('href', user.fontLink)
+    ingrCardContainer.append(card)
 
-  return {objType: user.objType, name: user.name, itsVegan: user.itsVegan, why: user.why, updateDate: user.updateDate, font: user.font, veganCheck: user.veganCheck, element: card}
+    return {objType: user.objType, name: user.name, itsVegan: user.itsVegan, why: user.why, updateDate: user.updateDate, font: user.font, veganCheck: user.veganCheck, element: card}
   });
 
   produtos = data.Produtos.map(user => {
