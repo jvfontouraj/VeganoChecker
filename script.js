@@ -44,7 +44,10 @@ searchInput.addEventListener("input", (el)=>{
       user.font.toLowerCase().includes(value) ||
       user.itsVegan.toLowerCase().includes(value)||
       user.objType.toLowerCase().includes(value)
-      user.element.classList.toggle("hide", !isVisible)
+      console.log(isVisible)
+      if(!isVisible){
+        user.element.classList.toggle("hide")
+      }
     })
 
   } else{
