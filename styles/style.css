@@ -83,6 +83,7 @@ a{
 }
 
 label{
+  text-align: center;
   font-size: 5.2rem;
   font-weight: 600;
   margin-bottom: 2.4rem;
@@ -97,7 +98,9 @@ label{
 input{
   font-size: 2rem;
   width: 25rem;
+  max-width: 50vw;
   height: 3rem;
+  
 
   border-radius: .25rem 0 0 .25rem ;
   border: 1px solid #333;

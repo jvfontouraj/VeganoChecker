@@ -1,0 +1,35 @@
+/****************/
+/* BELOW 960px*/
+/***************/
+
+@media (max-width: 60em) {
+  .ingr-cards-container, .prod-cards-container{
+    width: 65%;
+  }
+}
+
+/****************/
+/* BELOW 560px*/
+/***************/
+
+@media (max-width: 35em) {
+  .ingr-cards-container, .prod-cards-container{
+    width: 75%;
+  }
+}
+
+/****************/
+/* BELOW 432px*/
+/***************/
+
+@media (max-width: 27em) {
+  .grid{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card{
+    width: 75vw;
+  }
+
+}
