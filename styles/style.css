@@ -155,6 +155,7 @@ select{
 .card > .header {
   margin-bottom: 1rem;
   font-size: 2rem;
+  font-weight: 500;
 }
 
 .card > .body {
@@ -186,6 +187,10 @@ select{
 
 .font-div{
   margin-bottom: 0;
+}
+
+.its-vegan{
+  font-size: 2rem;
 }
 
 /*****************/

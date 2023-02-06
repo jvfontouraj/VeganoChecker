@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400,500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="/styles/style.css">
+
     <link rel="stylesheet" href="/styles/query.css">
+    
     <title>Vegano Checker</title>
 </head>
 <body> 
@@ -30,6 +32,10 @@
         <div class="card veg-div">
             <div class="header"></div>
             <div class="body">
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign hide"></div>
+                    <div class="its-vegan"></div>
+                </div>
                 <div class="why-div body-child">
                     <h3>Porque?</h3>
                     <div class="why" ></div>
@@ -41,20 +47,19 @@
                 <div class="font-div body-child">
                     <h3>Fonte</h3>
                     <a href="#" class="font" target="_blank"></a>
-                </div>
-                <div class="its-vegan-div body-child">
-                    <div class="vegan-sign hide"></div>
-                    <div class="its-vegan"></div>
                 </div>
             </div>
         </div>
     </template>
 
-    <h3 class="ingr-message hide">Nenhum ingrediente foi encontrado</h3>
     <template class="nveg-ingredients-template">
         <div class="card nveg-div">
             <div class="header"></div>
             <div class="body">
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign hide"></div>
+                    <div class="its-vegan"></div>
+                </div>
                 <div class="why-div body-child">
                     <h3>Porque?</h3>
                     <div class="why" ></div>
@@ -66,10 +71,6 @@
                 <div class="font-div body-child">
                     <h3>Fonte</h3>
                     <a href="#" class="font" target="_blank"></a>
-                </div>
-                <div class="its-vegan-div body-child">
-                    <div class="vegan-sign"></div>
-                    <div class="its-vegan"></div>
                 </div>
             </div>
         </div>
@@ -80,6 +81,10 @@
         <div class="card undf-div">
             <div class="header"></div>
             <div class="body">
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign hide"></div>
+                    <div class="its-vegan"></div>
+                </div>
                 <div class="why-div body-child">
                     <h3>Porque?</h3>
                     <div class="why" ></div>
@@ -91,20 +96,19 @@
                 <div class="font-div body-child">
                     <h3>Fonte</h3>
                     <a href="#" class="font" target="_blank"></a>
-                </div>
-                <div class="its-vegan-div body-child">
-                    <div class="vegan-sign"></div>
-                    <div class="its-vegan"></div>
                 </div>
             </div>
         </div>
     </template>
     
-    <h3 class="ingr-message hide">Nenhum ingrediente foi encontrado</h3>
     <template class="veg-products-template">
         <div class="card veg-div">
             <div class="header"></div>
             <div class="body">
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign"></div>
+                    <div class="its-vegan"></div>
+                </div>
                 <div class="brand-div body-child">
                     <h3>Marca</h3>
                     <div class="brand"></div>
@@ -125,19 +129,18 @@
                     <h3>Fonte</h3>
                     <a href="#" class="font" target="_blank"></a>
                 </div>
-                <div class="its-vegan-div body-child">
-                    <div class="vegan-sign"></div>
-                    <div class="its-vegan"></div>
-                </div>
             </div>
         </div>
     </template>
 
-    <h3 class="prod-message hide">Nenhum produto foi encontrado</h3>
     <template class="nveg-products-template">
         <div class="card nveg-div">
             <div class="header"></div>
             <div class="body">
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign"></div>
+                    <div class="its-vegan"></div>
+                </div>
                 <div class="brand-div body-child">
                     <h3>Marca</h3>
                     <div class="brand"></div>
@@ -158,19 +161,18 @@
                     <h3>Fonte</h3>
                     <a href="#" class="font" target="_blank"></a>
                 </div>
-                <div class="its-vegan-div body-child">
-                    <div class="vegan-sign"></div>
-                    <div class="its-vegan"></div>
-                </div>
             </div>
         </div>
     </template>
 
-    <h3 class="prod-message hide">Nenhum produto foi encontrado</h3>
     <template class="undf-products-template">
         <div class="card undf-div">
             <div class="header"></div>
             <div class="body">
+                <div class="its-vegan-div body-child">
+                    <div class="vegan-sign"></div>
+                    <div class="its-vegan"></div>
+                </div>
                 <div class="brand-div body-child">
                     <h3>Marca</h3>
                     <div class="brand"></div>
@@ -191,15 +193,11 @@
                     <h3>Fonte</h3>
                     <a href="#" class="font" target="_blank"></a>
                 </div>
-                <div class="its-vegan-div body-child">
-                    <div class="vegan-sign"></div>
-                    <div class="its-vegan"></div>
-                </div>
             </div>
         </div>
     </template>
-    <h3 class="prod-message hide">Nenhum produto foi encontrado</h3>
 
+    <h3 class="prod-message hide">Nenhum produto foi encontrado</h3>
 
     <script src="script.js"></script>
 </body>

@@ -54,7 +54,18 @@
     "font": "Site 'Muito Gourmet'",
     "fontLink": "https://muitogourmet.com/carmim-de-cochonilha-conheca-o-corante-feito-de-inseto/",
     "objType": "ingrediente"
-    }
+    },
+    {
+      "id": 6,
+      "name": "Lecitina de Soja",
+      "itsVegan": "Vegano",
+      "veganCheck": 1,
+      "why": "Produzido a partir da soja",
+      "updateDate": "22/01/2023",
+      "font": "Embrapa",
+      "fontLink": "https://www.embrapa.br/agencia-de-informacao-tecnologica/cultivos/soja/pos-producao/soja-na-alimentacao",
+      "objType": "ingrediente"
+      }
 
   ],
   "Produtos": [
